@@ -6,6 +6,9 @@ sudo cp mpd_oled.service /etc/systemd/system
 sudo systemctl daemon-reload
 sudo systemctl enable mpd_oled
 sudo systemctl start mpd_oled
+echo "Config overlay"
+sudo cp /boot/config.txt /boot/config.txt2
+sudo cp config.txt /boot/
 echo "Install driver"
 sudo cp snd-soc-ddplayer-dac.ko /lib/modules/4.19.118-v7l+/kernel/sound/soc/bcm/snd-soc-ddplayer-dac.ko
 sudo cp ddplayer-dac.dtbo /boot/overlays/ddplayer-dac.dtbo
