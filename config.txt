@@ -10,6 +10,4 @@ hdmi_ignore_edid_audio=1
 
 include userconfig.txt
 
-#### Volumio i2s setting below: do not alter ####
-dtoverlay=ddplayer-dac
 
