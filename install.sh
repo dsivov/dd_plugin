@@ -14,4 +14,5 @@ sudo cp snd-soc-ddplayer-dac.ko /lib/modules/4.19.118-v7l+/kernel/sound/soc/bcm/
 sudo cp ddplayer-dac.dtbo /boot/overlays/ddplayer-dac.dtbo
 echo "Install dacs list into webui"
 cp dacs.json /volumio/app/plugins/system_controller/i2s_dacs/dacs.json
+cp cards.json /volumio/app/plugins/audio_interface/alsa_controller/cards.json
 cp mpd.conf.tmpl /volumio/app/plugins/music_service/mpd/mpd.conf.tmpl
