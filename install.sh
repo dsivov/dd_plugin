@@ -15,4 +15,9 @@ sudo cp ddplayer-dac.dtbo /boot/overlays/ddplayer-dac.dtbo
 echo "Install dacs list into webui"
 cp dacs.json /volumio/app/plugins/system_controller/i2s_dacs/dacs.json
 cp cards.json /volumio/app/plugins/audio_interface/alsa_controller/cards.json
+sudo depmod
+sudo depmod -n| grep ddpl
+echo "press any key to continue, define ddplayer dac after reboot"
+read v
+sudo reboot
 #cp mpd.conf.tmpl /volumio/app/plugins/music_service/mpd/mpd.conf.tmpl
